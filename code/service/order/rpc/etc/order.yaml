@@ -30,3 +30,9 @@ ProductRpc:
     Hosts:
       - etcd:2379
     Key: product.rpc
+
+Telemetry:
+  Name: order.rpc
+  Endpoint: http://jaeger:14268/api/traces
+  Sampler: 1.0
+  Batcher: jaeger
